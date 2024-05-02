@@ -1,0 +1,27 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	name = Paracetamol
+	email = paracetamol.C8H9NO2@icloud.com
+[alias]
+    ci = commit
+    co = checkout
+    st = status
+	last = log -1
+	brlog = log --oneline --graph --all
+	formlog = log --pretty=format:\"%h - %an, %ar - %s\"
+	sw = switch
+	br = branch
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[core]
+	editor = nano
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
